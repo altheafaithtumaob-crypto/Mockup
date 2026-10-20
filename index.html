@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kanto Coffee</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Kanto Coffee</a>
+    <button id="navBtn" aria-expanded="false" aria-controls="menuList">Menu</button>
+    <nav>
+      <ul id="menuList">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#visit">Visit</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+    <div class="hero grid">
+      <div class="hero-text">
+        <h1>Small corner shop, good coffee.</h1>
+        <p>Locally roasted beans, fresh pastries every morning, and a few tables by the window. Walk in, no need to book.</p>
+        <a class="btn" href="#menu">See the menu</a>
+      </div>
+      <div class="hero-img"><img src="pic.png" alt="Shop front"></div>
+    </div>
+  </div>
+
+  <section id="menu">
+    <div class="wrap">
+      <h2>Menu</h2>
+      <p class="sub">Prices in pesos. Ask us about oat milk.</p>
+      <div class="filters" id="filters">
+        <button class="on" data-f="all">All</button>
+        <button data-f="coffee">Coffee</button>
+        <button data-f="tea">Tea</button>
+        <button data-f="bakery">Bakery</button>
+      </div>
+      <div class="grid" id="items">
+        <article class="item" data-c="coffee"><span class="tag">Coffee</span><h3>Americano</h3><p>Double shot, hot water.</p><div class="row"><span class="price">₱90</span></div></article>
+        <article class="item" data-c="coffee"><span class="tag">Coffee</span><h3>Flat White</h3><p>Two shots, steamed milk.</p><div class="row"><span class="price">₱120</span></div></article>
+        <article class="item" data-c="coffee"><span class="tag">Coffee</span><h3>Iced Spanish Latte</h3><p>Sweetened condensed milk over ice.</p><div class="row"><span class="price">₱140</span></div></article>
+        <article class="item" data-c="tea"><span class="tag">Tea</span><h3>Barako Tea Blend</h3><p>Black tea with a bit of calamansi.</p><div class="row"><span class="price">₱85</span></div></article>
+        <article class="item" data-c="tea"><span class="tag">Tea</span><h3>Iced Lemon Tea</h3><p>Brewed daily, not from a mix.</p><div class="row"><span class="price">₱80</span></div></article>
+        <article class="item" data-c="bakery"><span class="tag">Bakery</span><h3>Pandesal Box</h3><p>Six pieces, still warm until 9am.</p><div class="row"><span class="price">₱60</span></div></article>
+        <article class="item" data-c="bakery"><span class="tag">Bakery</span><h3>Ensaymada</h3><p>Butter, sugar, grated cheese.</p><div class="row"><span class="price">₱75</span></div></article>
+        <article class="item" data-c="bakery"><span class="tag">Bakery</span><h3>Banana Loaf</h3><p>Sold by the slice.</p><div class="row"><span class="price">₱70</span></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap grid">
+      <div class="about">
+        <h2>Visit us</h2>
+        <p>We’re on the corner of Rizal and Mabini, across from the old post office. Parking is on the street, and there’s a bike rack by the door.</p>
+        <p>The shop has wifi and a few outlets near the back wall. Dogs are welcome on the patio.</p>
+      </div>
+      <div class="hours">
+        <h2>Hours</h2>
+        <table>
+          <tr><td>Mon – Fri</td><td>6:30 am – 7:00 pm</td></tr>
+          <tr><td>Saturday</td><td>7:00 am – 8:00 pm</td></tr>
+          <tr><td>Sunday</td><td>7:00 am – 5:00 pm</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap grid">
+      <form id="form" novalidate>
+        <h2>Send a message</h2>
+        <label>Name <input type="text" name="name" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>Message <textarea name="message" rows="4" required></textarea></label>
+        <div><button class="btn" type="submit">Send</button></div>
+        <p id="msg" role="status"></p>
+      </form>
+      <div class="side">
+        <p>For catering or bulk orders, tell us the date and headcount and we’ll reply within a day.</p>
+        <p>hello@kantocoffee.example<br>0900 000 0000</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Kanto Coffee. Mockup, not a real shop.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
